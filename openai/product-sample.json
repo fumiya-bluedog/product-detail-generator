@@ -1,0 +1,100 @@
+{
+  "product": {
+    "id": "",
+    "name": "",
+    "description": "",
+    "category": "",
+    "manufacturer": {
+      "name": "",
+      "address": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "postalCode": "",
+        "country": ""
+      },
+      "contact": {
+        "phone": "",
+        "email": "",
+        "website": ""
+      }
+    },
+    "specifications": {
+      "dimensions": {
+        "width": "",
+        "height": "",
+        "depth": ""
+      },
+      "weight": "",
+      "materials": [
+        "",
+        ""
+      ],
+      "battery": {
+        "type": "",
+        "capacity": "",
+        "chargingTime": "",
+        "batteryLife": ""
+      },
+      "features": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "pricing": {
+      "currency": "",
+      "price": 0,
+      "discount": {
+        "isAvailable": true,
+        "percentage": 0,
+        "validUntil": ""
+      }
+    },
+    "availability": {
+      "inStock": true,
+      "stockCount": 150,
+      "warehouses": [
+        {
+          "location": "Los Angeles, CA",
+          "stock": 100
+        },
+        {
+          "location": "New York, NY",
+          "stock": 50
+        }
+      ]
+    },
+    "reviews": [
+      {
+        "user": "",
+        "rating": 5,
+        "comment": "",
+        "date": "YYYY-MM-DD"
+      },
+      {
+        "user": "",
+        "rating": 4,
+        "comment": "",
+        "date": "YYYY-MM-DD"
+      }
+    ],
+    "tags": [
+      ""
+    ],
+    "relatedProducts": [
+      {
+        "id": "67890",
+        "name": "",
+        "url": ""
+      },
+      {
+        "id": "11223",
+        "name": "",
+        "url": ""
+      }
+    ]
+  }
+}
