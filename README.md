@@ -12,6 +12,7 @@ Uses OpenAI API to complete and format product details into JSON objects.
 ## Start the server:
 ```
 cd ./api
+export OPENAI_API_KEY="your_api_key_here"
 node server.js
 ```
 ## API Endpoint:

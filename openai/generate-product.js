@@ -1,5 +1,6 @@
 const OpenAI = require("openai");
 const fs = require("node:fs");
+const path = require("path");
 const dotenv = require("dotenv");
 
 /**
@@ -15,8 +16,9 @@ const generateProduct = async (productName, productData = null) => {
     const apiKey = process.env.OPENAI_API_KEY;
     const openai = new OpenAI();
 
+    const sampleJsonPath = path.join(__dirname, "product-sample.json");
     const sampleJsonFormat = JSON.parse(
-        fs.readFileSync("./product-sample.json", "utf8")
+        fs.readFileSync(sampleJsonPath, "utf-8")
     )
 
     /**
