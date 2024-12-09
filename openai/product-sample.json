@@ -55,15 +55,15 @@
     },
     "availability": {
       "inStock": true,
-      "stockCount": 150,
+      "stockCount": 0,
       "warehouses": [
         {
           "location": "Los Angeles, CA",
-          "stock": 100
+          "stock": 0
         },
         {
           "location": "New York, NY",
-          "stock": 50
+          "stock": 0
         }
       ]
     },

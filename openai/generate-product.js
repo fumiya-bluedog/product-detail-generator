@@ -39,7 +39,8 @@ const generateProduct = async (productName, productData = null) => {
          `
         :
         `You are a Product Information Generation Assistant.
-         Based on the following product name, generate fictional product information following the required JSON format
+         Based on the following product name, generate fictional product information following the required JSON format.
+         The values specified in the JSON are for reference only. They should not be used as-is; adjust the values to dynamically generate data.
 
          Product Name: ${productName}
 
