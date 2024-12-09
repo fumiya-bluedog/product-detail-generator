@@ -158,7 +158,7 @@ http://localhost:9090/getProductInfo?query=RoboBuddy 3000
 ### Vegetable World
 <details>
 <summary>
-http://localhost:9090/getProductInfo?query=Vegetable%20World
+http://localhost:9090/getProductInfo?query=Vegetable World
 </summary>
 
 ```json
@@ -269,7 +269,7 @@ http://localhost:9090/getProductInfo?query=Vegetable%20World
 ### History of Technology
 <details>
 <summary>
-http://localhost:9090/getProductInfo?query=History%20of%20Technology
+http://localhost:9090/getProductInfo?query=History of Technology
 </summary>
 
 ```json
