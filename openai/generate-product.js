@@ -2,6 +2,14 @@ const OpenAI = require("openai");
 const fs = require("node:fs");
 const dotenv = require("dotenv");
 
+/**
+ * Generates product information based on the value entered by the user.
+ * If product data is provided as an argument, it will be used as a reference when generating the product information.
+ * If no reference data is available, the product information will be generated independently.
+ *
+ * @param {string} productName - The name of the product entered by the user
+ * @param {object} [productData] - Optional reference product data
+ */
 const generateProduct = async (productName, productData = null) => {
     dotenv.config();
     const apiKey = process.env.OPENAI_API_KEY;
@@ -11,6 +19,10 @@ const generateProduct = async (productName, productData = null) => {
         fs.readFileSync("./product-sample.json", "utf8")
     )
 
+    /**
+     * Since the prompt content is hardcoded, adjusting the instructions for the LLM requires redeployment. For the production release, an admin panel should be implemented to enable dynamic prompt adjustments.
+     * When reference product data is found, the system generates product information based on that data. Unless the product is entirely fictional, the generated data will generally align with real-world details.
+     */
     const prompt = productData ?
         `You are a Product Information Completion Assistant.
          Based on the product information retrieved from the following API, generate a complete JSON object.
@@ -34,6 +46,10 @@ const generateProduct = async (productName, productData = null) => {
          `;
 
     try {
+        /**
+         * The model used for the LLM should be configurable through environment variables
+         * or similar methods to allow dynamic changes without code modifications
+         */
         const completions = await openai.chat.completions.create({
             model: "gpt-3.5-turbo",
             messages: [
