@@ -12,7 +12,7 @@ Uses OpenAI API to complete and format product details into JSON objects.
 ## Start the server:
 ```
 cd ./api
-npm run start
+node server.js
 ```
 ## API Endpoint:
 - Retrieve Product Information:  
